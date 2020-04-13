@@ -1,10 +1,6 @@
 
 cmake_minimum_required(VERSION 3.0)
 
-set(CMAKE_BUILD_TYPE Debug)
-set(CMAKE_CXX_FLAGS "-std=c++1z")
-
-
 
 project(NussinovFolding)
 #project(distMat C CXX)
@@ -15,6 +11,8 @@ add_executable(
     ../../source/nussinov_folding.cpp
     ../../source/nussinov_dp.cpp)
 
+set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_CXX_FLAGS "-std=c++1z")
 
 if(THREADS_HAVE_PTHREAD_ARG)
     target_compile_options(NussinovFolding PUBLIC "-pthread")

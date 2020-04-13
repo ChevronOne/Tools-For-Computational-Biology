@@ -21,7 +21,7 @@ To install the tool all you need is a C++ compiler. To build it do the following
 - [x] after the building process was successfully completed, you will find a binary file called **distMat** in the same directory, which you could use to calculate a distance matrix from VCF files.
 
 
-The tool **distMat** calculates a distance matrix between a sample in the first VCF file and other samples in the second VCF file. The tool considers only the SNPs on the chromosome 1 "**chr1**", which is enough to determine the population.
+The tool **distMat** calculates a distance matrix between one sample in the first VCF file and multiple other samples in the second VCF file. The tool considers only the SNPs on the chromosome 1 "**chr1**", which is enough to determine the population.
 
 It takes 5 arguments to run, and they are as follow:
 
@@ -52,7 +52,7 @@ The following plot shows a random sample "in orange" compared with all samples f
 
 ![](examples/pca_1000.png)
 
-The data form 1000 Genomes Project are more than 100GB, to calculate a distance matrix between all of them and your sample may be very expensive. The above example took more than 26 hours on a server with 123 cores, and 1TB of RAM. So if you want to do it on a personal PC, you can instead calculate a distance matrix between a portion of them and your sample. [1000 Genomes Project](https://www.internationalgenome.org) also provide portions of samples from 4 populations in small VCF files "less than 2GB", which will take less than 1min to calculate a distance matrix between all of them an your sample. :camel:
+The data form 1000 Genomes Project are more than 100GB, to calculate a distance matrix between all of them and your sample may be very expensive. The above example took more than 26 hours on a server with 123 cores, and 1TB of RAM. So if you want to do it on a personal PC, you can instead calculate a distance matrix between a portion of them and your sample. [1000 Genomes Project](https://www.internationalgenome.org) also provide portions of samples from 4 populations in small VCF files "less than 2GB", which will take less than 1min to calculate a distance matrix between all of them and your sample. :camel:
 
 
 

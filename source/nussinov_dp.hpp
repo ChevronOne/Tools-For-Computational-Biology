@@ -18,7 +18,7 @@ class nussinov_dp{
 	
 	std::map<char, std::map<char, std::size_t>> score_func;     // score function
 	score **scores;        // scores mat
-	std::string seq, seq_header, structure;   // the sequence, it's header and the predicted structure
+	std::string seq, seq_header, structure;   // the sequence, its header and the predicted structure
 	std::size_t hl_size;    // the minimum allowed hairpin-loops size
 	std::size_t n_basepairs;  // number of base pairs
 
